@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Isn't Clubhouse available on my platform yet?" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900&amp;display=swap" rel="stylesheet">
+  <title>Is Clubhouse Available?</title>
+
+  <template id="answer-yes">
+    <p>👋 YES, come to join!</p>
+  </template>
+  <template id="answer-no">
+    <p>NOPE 😞</p>
+  </template>
+</head>
+
+<body class="layout">
+  <header>
+    <h1 class="title">
+      Is
+      <b>
+        <a
+          id="clubhouse"
+          class="link"
+          href="https://www.joinclubhouse.com"
+          target="_blank"
+          rel="noopener"
+        >Clubhouse</a>
+      </b>
+      available on <span id="platform" class="platform">
+        <span class="placeholder">my platform?</span>
+        <b class="value" aria-hidden="true"></b>
+      </span>
+    </h1>
+  </header>
+
+  <main>
+    <div id="answer" class="answer"></div>
+  </main>
+
+  <footer>
+    <p>
+      This page made by
+      <a
+        class="author"
+        href="https://twitter.com/KrComet"
+        target="_blank"
+        rel="noopener"
+      >Hyeseong Kim</a>
+      who is feeling lonely with his only friend, Android.
+    </p>
+  </footer>
+
+  <script type="module" src="/index.js"></script>
+</body>
+
+</html>

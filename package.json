@@ -1,0 +1,11 @@
+{
+  "name": "isclubhouseavailable.info",
+  "private": true,
+  "scripts": {
+    "dev": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.0.11"
+  }
+}

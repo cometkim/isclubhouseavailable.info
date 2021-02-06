@@ -1,0 +1,74 @@
+body {
+  font-family: Nunito, sans-serif;
+  --text: black;
+  color: var(--text);
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+.platform {
+  position: relative;
+  display: inline-block;
+}
+
+.platform > * {
+  transition: opacity 0.2s;
+}
+
+.platform > .value {
+  text-transform: capitalize;
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+}
+
+body.done .placeholder {
+  opacity: 0;
+}
+
+body.done .value {
+  opacity: 1;
+}
+
+.answer {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+}
+
+body.done .answer {
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: opacity 0.2s ease-in 3s;
+}
+
+body.done footer {
+  opacity: 1;
+}
+
+.author {
+  margin: 0 0.2rem;
+}
