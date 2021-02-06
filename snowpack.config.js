@@ -3,19 +3,9 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-  mount: {
-    /* ... */
-  },
-  plugins: [
-    /* ... */
+  exclude: [
+    '.yarn/**/*',
+    '**/node_modules/**/*',
+    'workers-site/**/*',
   ],
-  packageOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
 };

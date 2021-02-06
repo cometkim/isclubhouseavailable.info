@@ -1,0 +1,10 @@
+name = "isclubhouseavailable"
+type = "webpack"
+account_id = "fe86c3d78b514b31fdd1a74181c2c4ce"
+workers_dev = true
+route = "isclubhouseavailable.info/*"
+zone_id = "27208492bb52dfd54c07a05c1b0d4b49"
+
+[site]
+bucket = "./build"
+entry-point = "workers-site"
